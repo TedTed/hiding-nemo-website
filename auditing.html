@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Design reviews and code audits - Hiding Nemo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Hiding Nemo</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li class="dropdown"><a href="index.html#services" class="active"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="building.html">Data sharing or publication</a></li>
+              <li><a href="#main">Design reviews and code audits</a></li>
+              <li><a href="advising.html">Trainings and advising</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Keep privacy risk in check</h1>
+        <h2>Design reviews and code audits by world-class experts.</h2>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <!-- TODO picture
+            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+            -->
+            <h3>Get an independent assessment of your privacy-critical systems.</h3>
+            <p>We can review the design and implementation of systems that use
+            anonymization or synthetic data technology, provide you with an
+            audit report, and help you resolve any identified issues.</p>
+            <p>We can work on complex products deployed in bespoke production
+            environments, work with engineering teams to address any technical
+            issues in detail, and distill the findings in clear language, for
+            executives, legal teams, or regulators.</p>
+
+            <h5>Relevant experience</h5>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>
+                Leading the anonymization consulting team at Google, which has
+                to review and approve all new uses of anonymization technology
+                at the company. Personally reviewing dozens of product launches,
+                and defining company-wide policies.
+                </span></li>
+              <li><i class="bi bi-check-circle"></i> <span>
+                Performing adversarial assessments for multiple high-profile
+                Google products that deployed ad hoc anonymization practices,
+                leading to significant roadmap and strategy changes.
+                </span></li>
+              <li><i class="bi bi-check-circle"></i> <span>
+                Finding and disclosing multiple
+                <a href="https://www.tmlt.io/resources/tiny-bits-matter-precision-based-attacks-on-differential-privacy">vulnerabilities</a>
+                in various open-source differential privacy libraries, and
+                designing
+                <a href="https://arxiv.org/abs/2207.13793">novel mitigations</a>
+                to provably mitigate this entire class of safety issues. 
+                </span></li>
+            </ul>
+          </div>
+
+          <div class="testimonials col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Dr. Desfontaines led the technical test on the privacy
+                  risks of a large-scale customer-facing queryable analytics
+                  platform. His findings were new and actionable: he discovered
+                  that existing privacy protections were insufficient, as it
+                  only took a few days to re-identify individuals. Most
+                  importantly, the fixes he suggested were applicable and
+                  reasonable. He built a clear narrative for the problem and the
+                  solution. Overall, when I work with Dr Desfontaines, he
+                  consistently enables clear solutions to improve the privacy of
+                  large datasets. 
+                  </span><i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/rebecca.jpg" class="testimonial-img" alt="">
+              <h3>Rebecca Balebako</h3>
+              <h4>CEO, Brandworthy.AI</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+    <!-- Call To Action Section -->
+    <section id="contact" class="call-to-action section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="section-title">
+              <h2>Contact us</h2>
+            </div>
+            <div class="text-center">
+              <p>Reach out by sending an email to
+              <script>
+                let user = "info";
+                let domain = "hiding-nemo.com";
+                document.write(
+                  '<b><a href="mailto:' + user + '@' + domain + '">'
+                  + '<span class="nowrap">'
+                  + user + '@' + domain 
+                  + '</span>'
+                  + '</a></b>');
+              </script>
+              and we will get back to you shortly.</p>
+              <script>
+                document.write('<a class="cta-btn" href="mailto:' + user + '@' + domain + '">Get in touch</a>');
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Hiding Nemo</span>
+          </a>
+          <p>A consultancy focused on helping organizations do more with data
+          while deeply respecting their users, using privacy-enhancing
+          technology.</p>
+        </div>
+
+        <div class="col-lg-2 col-3 footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="legal.html">Legal &amp; privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-5 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="building.html">Data sharing or publication</a></li>
+            <li><a href="auditing.html">Design reviews and code audits</a></li>
+            <li><a href="advising.html">Trainings and advising</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-4 footer-contact text-center text-md-start">
+          <h4>Contact us</h4>
+          <p><span>
+          <script>
+            let before = "info";
+            let after = "hiding-nemo.com";
+            document.write('<b><a href="mailto:' + before + '@' + after + '">' + before+ '@' + after + '</a></b>');
+          </script>
+          </span></p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.linkedin.com/company/hiding-nemo"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright Hiding Nemo — 2025 — All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Adapted from a template by <a href="https://bootstrapmade.com/">BootstrapMade</a>,
+        with <a href="legal.html">a lot of help</a>.
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

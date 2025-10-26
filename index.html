@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hiding Nemo — Unlock the value of your data, without losing user trust.</title>
+
+  <meta name="title" property="og:title" content="Hiding Nemo — Unlock the value of your data, without losing user trust." />
+  <meta property="twitter:title" content="Hiding Nemo — Unlock the value of your data, without losing user trust." />
+  <meta name="description" property="og:description" content="An independent consultancy helping organizations do more with data in a safe and respectful way, with built-in compliance. Get in touch!" />
+  <meta name="twitter:description" content="An independent consultancy helping organizations do more with data in a safe and respectful way, with built-in compliance. Get in touch!" />
+  <meta property="summary" content="An independent consultancy helping organizations do more with data in a safe and respectful way, with built-in compliance. Get in touch!"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="image" property="og:image" content="https://hiding-nemo.com/assets/img/hero-screenshot.png" />
+  <meta property="twitter:image" content="https://hiding-nemo.com/assets/img/hero-screenshot.png" />
+  <meta property="twitter:image:alt" content="A simple logo showing a orange coral with a few bubbles around." />
+  <link rel="canonical" href="https://hiding-nemo.com" />
+
+  <meta name="keywords" content="privacy, privacy-enhancing technology, consultancy, damien desfontaines, hiding nemo, differential privacy, anonymization, privacy risk analysis">
+
+  <meta name="google-site-verification" content="nn-i6v1p6hjgu8lfQR-I9v1l7ilHNwzikw5THmis2xc" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Hiding Nemo</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li class="dropdown"><a href="#services"><span>What we do</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="building.html">Data sharing or publication</a></li>
+              <li><a href="auditing.html">Design reviews and code audits</a></li>
+              <li><a href="advising.html">Trainings and advising</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/website-background-cropped-resized.jpg" alt="" data-aos="fade-in" class="">
+      <!-- In case you're wondering: Claude Monet's Waterloo Bridge, London, at Sunset -->
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out">
+          <div class="col-lg-11 text-center">
+            <h2>Unlock the value of your data, without losing user trust.</h2>
+            <p>We are <b>privacy-enhancing technology experts</b>, helping
+            organizations do more with data in a safe and respectful way, with
+            built-in compliance. Get in touch!</p>
+            <h3 id="hero-email">&nbsp;</h3>
+            <script>
+              var i = "info";
+              var h = "hiding-nemo.com";
+              var email = i + "@" + h;
+              var copyIcon = '<i id="copy-icon" class="bi bi-copy"></i>';
+              var copySuccessIcon = '<i id="copy-success-icon" class="bi bi-check2-square"></i>';
+              var element = document.getElementById("hero-email");
+              element.innerHTML = email + "&nbsp;&nbsp;" + copyIcon + copySuccessIcon;
+              var copyElt = document.getElementById("copy-icon");
+              var copySuccessElt = document.getElementById("copy-success-icon");
+              console.log("hello!");
+              element.addEventListener("click", async function(event) {
+                try {
+                  await navigator.clipboard.writeText(email);
+                  console.log('Email copied to clipboard: ' + email);
+                  copyElt.style.display = "none";
+                  copySuccessElt.style.display = "revert";
+                  setTimeout(() => {
+                    copyElt.style.display = "revert";
+                    copySuccessElt.style.display = "none";
+                  }, 1500);
+                } catch (err) {
+                  console.error('Failed to copy email: ', err);
+                }
+              });
+            </script>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What we do</h2>
+        <!--
+        <p>We help organizations <b>unlock the value of their data</b>, in a way
+        that provides a <b>rock-solid compliance story</b>, and <b>deeply
+        respects their users</b>.</p>
+        -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div>
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                  </svg>
+                  <i class="bi bi-rocket-takeoff"></i>
+                </div>
+                <!-- TODO: decide whether to use class="stretched-link" here -->
+                <a href="building.html">
+                  <h3>Break down data barriers</h3>
+                </a>
+                <p>Valuable data is often locked away for privacy or compliance
+                reasons. Such a missed opportunity!</p>
+                <br>
+                <p>We can build and deploy data products that empower you to
+                <b>share, publish, or monetize data</b>, with rock-solid privacy
+                guarantees: you extract more value out of your data, while
+                your lawyers can sleep soundly at night.</p>
+                <br>
+              </div>
+              <a class="read-more" href="building.html">
+                <span>Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div>
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                  </svg>
+                  <i class="bi bi-search"></i>
+                </div>
+                <a href="auditing.html">
+                  <h3>Keep privacy risk in check</h3>
+                </a>
+                <p>Anonymization and synthetic data technology can fail in
+                unexpected ways. Relying on them can be pretty scary!<p>
+                <br>
+                <p>We can <b>audit your existing uses of privacy technology</b>,
+                  provide an independent assessment of their safety guarantees,
+                  and work with you to mitigate any identified issues.</p>
+                <br>
+              </div>
+              <a class="read-more" href="auditing.html">
+                <span>Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div>
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                  </svg>
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="advising.html">
+                  <h3>Define your privacy strategy</h3>
+                </a>
+                <p>Ever-changing ecosystems and privacy regulations force
+                organizations to constantly play catch-up. This is exhausting!</p>
+                <br>
+                <p>We can help you inform your privacy strategy with <b>focused
+                  advice on privacy-enhancing technology</b>, so you can
+                  confidently decide where to focus future investment, and
+                  up-skill your teams.</p>
+                <br>
+              </div>
+              <a class="read-more" href="advising.html">
+                <span>Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about-alt section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-5 col-xl-4 position-relative align-self-start">
+            <img src="assets/img/Damien_50_small.jpg" class="img-fluid" alt="A headshot of Damien Desfontaines.">
+          </div>
+          <div class="col-lg-7 col-xl-8 content" data-aos="fade-up" data-aos-delay="200">
+            <h2>About us</h2>
+            <p>
+              Dr. Damien Desfontaines founded Hiding Nemo to help organizations do
+              more with data, while providing robust privacy protections to
+              their users. He is a renowned expert in privacy-enhancing
+              technology, with a focus on differential privacy. His career
+              highlights include:
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Leading the
+                  anonymization consulting team at Google, providing guidance on
+                  policy and technical design for dozens of
+                  <a href="https://www.google.com/covid19/mobility/">high-profile launches</a>.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Obtaining his PhD from
+                  ETH Zürich, publishing
+                  <a href="https://petsymposium.org/student-paper-award.php">award-winning work</a>
+                  on differential privacy in top-tier scientific
+                  venues.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Designing and building
+                  leading open-source software platforms for provably robust
+                  anonymization, like
+                  <a href="https://github.com/google/differential-privacy">GoogleDP</a> or
+                  <a href="https://gitlab.com/tumult-labs/analytics">Tumult Analytics</a>.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Training dozens of
+                  people, in both technical and non-technical roles, to help
+                  them understand and deploy privacy-enhancing technologies for
+                  real-world use cases.</span></li>
+            </ul>
+            <p>
+              His <a href="https://desfontain.es/blog/friendly-intro-to-differential-privacy.html">blog post series on differential privacy</a>
+              is a reference introduction to provably robust anonymization
+              methods, widely praised by technical and non-technical audiences
+              alike.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <!--
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h5>We worked with organizations such as:</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+
+
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/google.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/wmf.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/pinterest.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/tep.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/census.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="8000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 8000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Damien was a key component in launching the
+                    <a href="https://www.google.com/covid19/mobility/">Community Mobility Reports</a>,
+                    a project which required bulletproof anonymization of
+                    some of the world's most sensitive data. Damien and his team
+                    were tasked with this and delivered, under extreme pressure,
+                    a solution which was lauded worldwide. Through his work, we
+                    safely shared data that impacted the decisions of leaders
+                    around the world.</span><i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/andrew.jpeg" class="testimonial-img" alt="">
+                <h3>Andrew Oplinger</h3>
+                <h4>Senior Staff Privacy Engineer, Google</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Damien has the perfect mixture of deep technical
+                  expertise, business understanding, and communication
+                  excellence. We hired him as a
+                  <a href="https://desfontain.es/blog/five-stages.html">keynote speaker</a>
+                  for the conference AnoSiDat 2024. He nicely boiled complicated
+                  technical challenges down and connected them to business
+                  decisions, which set the perfect tone for our
+                  conference.</span><i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/esfandiar.jpeg" class="testimonial-img" alt="">
+                <h3>Esfandiar Mohammadi</h3>
+                <h4>Associate Professor, University of Lübeck</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Dr. Desfontaines led the technical test on the privacy
+                    risks of a large-scale customer-facing queryable analytics
+                    platform, and discovered that existing privacy protections
+                    were insufficient, as it only took a few days to re-identify
+                    individuals. Most importantly, he suggested applicable and
+                    reasonable fixes, and built a clear narrative for the
+                    problem and the solution.</span><i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/rebecca.jpg" class="testimonial-img" alt="">
+                <h3>Rebecca Balebako</h3>
+                <h4>CEO, Brandworthy.AI</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+              <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>Damien was an integral contributor to the Wikimedia
+                Foundation's
+                <a href="https://diff.wikimedia.org/2023/06/21/new-dataset-uncovers-wikipedia-browsing-habits-while-protecting-users/">differentially private pageview data release</a>,
+                helping to shepherd it from concept to experiment to a deployed
+                data product. He is particularly gifted at listening to,
+                communicating with, and educating every member of an
+                organization about differential privacy, from the C-suite to
+                product owners to individual contributors.</span><i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/hal.jpeg" class="testimonial-img" alt="">
+                <h3>Hal Triedman</h3>
+                <h4>Senior Privacy Engineer, Wikimedia Foundation</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+              <p>
+              <i class=" bi bi-quote quote-icon-left"></i>
+                <span>Damien's guidance evolved my rudimentary understanding of
+                  differential privacy to an understandable
+                  <a href="https://practicaldataprivacybook.com/">chapter</a> and
+                  <a href="https://github.com/kjam/practical-data-privacy">open-source code</a>&nbsp;—&nbsp;all
+                  within 2 months. His deep technical expertise, teaching and
+                  communication experience and his sharp ability to identify
+                  potential misunderstandings and address them make him an
+                  amazing advisor to any differential privacy or privacy risk
+                  problem.</span><i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/katharine.png" class="testimonial-img" alt="">
+                <h3>Katharine Jarmul</h3>
+                <h4>Principal Data Scientist, Thoughtworks</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Call To Action Section -->
+    <section id="contact" class="call-to-action section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-out" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="section-title">
+              <h2>Contact us</h2>
+            </div>
+            <div class="text-center">
+              <p>Reach out by sending an email to
+              <script>
+                let user = "info";
+                let domain = "hiding-nemo.com";
+                document.write(
+                  '<b><a href="mailto:' + user + '@' + domain + '">'
+                  + '<span class="nowrap">'
+                  + user + '@' + domain 
+                  + '</span>'
+                  + '</a></b>');
+              </script>
+              and we will get back to you shortly.</p>
+              <script>
+                document.write('<a class="cta-btn" href="mailto:' + user + '@' + domain + '">Get in touch</a>');
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Hiding Nemo</span>
+          </a>
+          <p>A consultancy focused on helping organizations do more with data
+          while deeply respecting their users, using privacy-enhancing
+          technology.</p>
+        </div>
+
+        <div class="col-lg-2 col-3 footer-links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="legal.html">Legal &amp; privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-5 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="building.html">Data sharing or publication</a></li>
+            <li><a href="auditing.html">Design reviews and code audits</a></li>
+            <li><a href="advising.html">Trainings and advising</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-4 footer-contact text-center text-md-start">
+          <h4>Contact us</h4>
+          <p><span>
+          <script>
+            let before = "info";
+            let after = "hiding-nemo.com";
+            document.write('<b><a href="mailto:' + before + '@' + after + '">' + before+ '@' + after + '</a></b>');
+          </script>
+          </span></p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.linkedin.com/company/hiding-nemo"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright Hiding Nemo — 2025 — All Rights Reserved.</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Adapted from a template by <a href="https://bootstrapmade.com/">BootstrapMade</a>,
+        with <a href="legal.html">a lot of help</a>.
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Mastodon verification-->
+  <a rel="me" href="https://hachyderm.io/@tedted"></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
